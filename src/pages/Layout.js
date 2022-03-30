@@ -1,6 +1,7 @@
 import { Outlet, NavLink } from "react-router-dom";
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import rootDirectory from "./rootfolder";
 const Layout = () => {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
 
@@ -10,7 +11,7 @@ const Layout = () => {
     <>
       <nav className="navbar navbar-expand-sm bg-primary navbar-dark">
         <div className="container-fluid">
-          <NavLink className="navbar-brand" to="/">
+          <NavLink className="navbar-brand" to={rootDirectory}>
             Logo
           </NavLink>
           <button
@@ -31,13 +32,17 @@ const Layout = () => {
           >
             <ul className="navbar-nav">
               <li className="nav-item">
-                <NavLink to="/" className="nav-link" activeClassName="active">
+                <NavLink
+                  to={rootDirectory}
+                  className="nav-link"
+                  activeClassName="active"
+                >
                   Home
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink
-                  to="/blogs"
+                  to={rootDirectory + "blogs"}
                   className="nav-link"
                   activeClassName="active"
                 >
@@ -46,7 +51,7 @@ const Layout = () => {
               </li>
               <li className="nav-item">
                 <NavLink
-                  to="/contact"
+                  to={rootDirectory + "contact"}
                   className="nav-link"
                   activeClassName="active"
                 >
