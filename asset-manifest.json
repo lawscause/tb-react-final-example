@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tb-react-final-example/static/css/main.e7720ab7.css",
+    "main.js": "/tb-react-final-example/static/js/main.42b16aa2.js",
+    "index.html": "/tb-react-final-example/index.html",
+    "main.e7720ab7.css.map": "/tb-react-final-example/static/css/main.e7720ab7.css.map",
+    "main.42b16aa2.js.map": "/tb-react-final-example/static/js/main.42b16aa2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e7720ab7.css",
+    "static/js/main.42b16aa2.js"
+  ]
+}
